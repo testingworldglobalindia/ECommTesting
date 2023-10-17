@@ -1,0 +1,38 @@
+Feature: To Test Search, Add to Cart and Purchase functionality using Debit Card222
+
+  @Regression @Nayak
+  Scenario: 22Test Search, Add to Cart and Purchase functionality using Mastercard InValid Debit Card [90m# EndToEndSearchAndPurchase.feature:13[0m
+    [32mGiven [0m[32mUser is on Login Page[0m                                                                       [90m# Steps.navigateToLogin()[0m
+    [31mWhen [0m[31mUser enters username[0m                                                                         [90m# Steps.user_enters_username()[0m
+      [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+      from unknown error: web view not found
+        (Session info: chrome=116.0.5845.111)
+      Build info: version: '4.8.0', revision: '267030adea'
+      System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [1110211a3a6187259ec6400e60c9aae7, findElement {using=xpath, value=//input[@id='email']}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\NITINT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51985}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51985/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Session ID: 1110211a3a6187259ec6400e60c9aae7
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+      	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+      	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+      	at org.hcl.web.pages.LoginPage.enterUsername(LoginPage.java:13)
+      	at org.web.testcase.steps.Steps.user_enters_username(Steps.java:25)
+      	at ✽.When User enters username(EndToEndSearchAndPurchase.feature:15)
+      [0m
+    [36mAnd [0m[36mUser enters password[0m                                                                          [90m# Steps.user_enters_password()[0m
+    [36mAnd [0m[36mUser clicks on signin button[0m                                                                  [90m# Steps.user_clicks_on_signin_button()[0m
+    [36mThen [0m[36mVerify user should be login[0m                                                                  [90m# Steps.verify_user_should_be_login()[0m
+    [36mAnd [0m[36mVerify user gets welcome message[0m                                                              [90m# Steps.verify_user_gets_welcome_message()[0m
